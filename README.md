@@ -1,6 +1,8 @@
 ## Парсер логов ModbusRTU
 
-Для запуска приложения необходимо, открыть терминал и ввести команду `git clone https://github.com/VladimirS0l/appModbusRtuLogParser`
+Для запуска приложения необходимо, открыть терминал и ввести команду 
+
+`git clone [https://github.com/VladimirS0l/appModbusRtuLogParser](https://github.com/VladimirS0l/appModbusRtuLogParser.git)`
 
 для копирования файлов приложения в свой локальный репозиторий.
 
