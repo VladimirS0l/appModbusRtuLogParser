@@ -19,9 +19,9 @@ public class PrintParseDataRequest16 implements PrintParseData{
     public List<String> print() {
         List<Request16AO> request16AOS = dataEntityRepository.getRequest16AOS();
         List<String> parseRequests16 = new ArrayList<>();
-        StringBuilder sb = new StringBuilder();
-        sb.append("\n\nВсе запросы 0х10:\n");
+
         for (Request16AO request : request16AOS) {
+            StringBuilder sb = new StringBuilder();
             sb.append("\nДата/Время: ").append(request.getDate())
                     .append(" / ").append(request.getTime());
             sb.append("\nАдрес устройства/Функциональный код: 0")

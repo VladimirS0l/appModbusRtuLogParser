@@ -16,9 +16,9 @@ public class PrintParseDataRequest03 implements PrintParseData{
     public List<String> print() {
         List<Request03AO> requests = dataEntityRepository.getRequest03AOS();
         List<String> parseRequests = new ArrayList<>();
-        StringBuilder sb = new StringBuilder();
-        sb.append("\n\nВсе запросы 0х03:");
+
         for (Request03AO request : requests) {
+            StringBuilder sb = new StringBuilder();
             sb.append("\nДата/Время: ").append(request.getDate())
                     .append(" / ").append(request.getTime());
             sb.append("\nАдрес устройства/Функциональный код: 0")

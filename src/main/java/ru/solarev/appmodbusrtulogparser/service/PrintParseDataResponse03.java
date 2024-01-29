@@ -20,9 +20,9 @@ public class PrintParseDataResponse03 implements PrintParseData{
     public List<String> print() {
         List<Response03AO> responses = dataEntityRepository.getResponse03AOS();
         List<String> parseResponses = new ArrayList<>();
-        StringBuilder sb = new StringBuilder();
-        sb.append("\n\nВсе ответы 0х03:\n\n");
+
         for (Response03AO response : responses) {
+            StringBuilder sb = new StringBuilder();
             sb.append("\nДата/Время: ").append(response.getDate())
                     .append(" / ").append(response.getTime());
             sb.append("\nАдрес устройства/Функциональный код: 0")
